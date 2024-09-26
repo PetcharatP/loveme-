@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+  }
+  
+  .wrapper {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 3em;
+    color: #e94d58;
+    margin: 15px 0;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  button {
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+    margin: 0 10px;
+  }
+  
+  button.yes-btn {
+    background: #e94d58;
+  }
+  
+  button.no-btn {
+    background: white;
+    color: #e94d58;
+  }
+  
+  /* Media Queries for iPads (Portrait and Landscape) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+      font-size: 2.5em;
+    }
+  
+    button {
+      width: 130px;
+      font-size: 1em;
+    }
+  }
+  
+  /* Media Queries for Mobile Phones */
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 2em;
+    }
+  
+    button {
+      width: 120px;
+      font-size: 0.9em;
+      margin: 0 5px;
+    }
+  
+    .btn-group {
+      flex-direction: column;
+    }
+  
+    button {
+      margin-bottom: 10px;
+    }
+  }
+  
